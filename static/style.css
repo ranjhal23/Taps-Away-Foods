@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    border:0;
+    box-sizing:border-box;
+    overflow:hidden;
+}
+.container{
+    height:100vh;
+    width:100vw;
+}
+.navigation{
+    background-color:rgba(0, 0, 0, 0.729);
+    display:flex;
+    color:white;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    height: 50px;
+}
+.nav-items{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+.flex-item{
+    margin-right: 40px;
+    font-weight: 400;
+    transition-duration: 0.2s;
+}
+.contact-btn{
+    position:absolute;
+    right:20px;
+    padding-left:35px;
+    padding-right:35px;
+    border-radius: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #FA7070;
+    color:white;
+    font-weight: 700;
+}
+.flex-item:hover{
+    color:#FA7070;
+    cursor:pointer;
+    text-shadow: 2px 2px 5px  rgba(0, 0, 0, 0.422);
+}
+.contact-btn:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    color: #FA7070;
+    border: solid 2px #FA7070;
+    transition: 0.8ms;
+    
+}
+.icon{
+    height:50px;
+    width:50px;
+    position:relative;
+    left:30px;
+}
+.hero{
+    background-image: url('images/minorbg.jpg');
+    height:100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-head{
+  color:white;
+  font-size: 70px;
+  z-index: 100;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.order-btn{
+    margin-top: 30px;
+    padding-left:40px;
+    padding-right:40px;
+    border-radius: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #FA7070;
+    color:white;
+    font-weight: 600;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+.order-btn:hover{
+    cursor:pointer;
+    background-color:#fd5e5e; 
+}

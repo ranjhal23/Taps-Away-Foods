@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+    background-color: aliceblue;
+}
+.wrapper{
+    height:100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.container{
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /*margin-left:300px ;*/
+    padding: 20px;    
+}
+.recipes{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    
+    
+}
+.card {
+    width: 30%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    border: #333;
+    max-height: 400px;
+   
+  }
+  .card img {
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    box-shadow: 0 0 20px #333;
+  }
+  .card h2{
+    margin-top: 45px;
+    margin-left: 15px;
+  }
+  .card:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+    box-shadow:  0 0 20px #333;;
+  }
+  
+ 
+  .card:hover figcaption{
+    opacity: 1;
+    bottom: 0;   
+  }
+  .card span{
+    font-size: small;
+    font-weight: lighter;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+  .container p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 50px;
+    
+    margin-bottom: 100px;
+    margin-top: 30px;
+  }
+  

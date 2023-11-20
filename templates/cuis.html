@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'suisstyle.css'%}">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <p>Recipes to choose from</p>
+            <div class="recipes">
+                {% for obj in cuisses %}
+                <figure class="card">
+                    <img src="{{obj.bg}}" alt="">
+                    <h2>{{obj.cuisine}}</h2>
+                    <span> {{obj.description}}</span><br>
+                </figure>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
