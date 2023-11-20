@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  
+} 
+.wrapper{
+    height:100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+.food-img{
+    padding-top: 50px;
+    width: 60%;
+    height: 500px;
+    object-fit: cover;
+    padding-bottom: 10px;
+}
+.wrapper h2{
+    padding-top: 20px;
+    font-size: 35px;
+    padding-bottom: 10px;
+}
+.wrapper span{
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+.speci{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.speci-val{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 21px;
+    width: 21px;
+    background-color: #eee;
+  }
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+ .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .ingredient-list{
+    padding-bottom: 20px;
+  }
+  
+  button{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 50px;
+    padding-left:10px;
+    padding-right:10px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #4e21c2;
+    color:white;
+    font-weight: 400;
+    font-size: 18px;
+}
+.btn:hover{
+    cursor:pointer;
+    background-color:#4a0dc4; 
+}

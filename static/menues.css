@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
+}  
+.wrapper{
+    height:100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.container{
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /*margin-left:300px ;*/
+    padding: 20px;    
+}
+.recipes{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;    
+}
+.card {
+    width: 30%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    border: #333;
+    max-height: 400px;
+   
+  }
+  .card img {
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    box-shadow: 0 0 20px #333;
+  }
+  .card h2{
+    margin-top: 45px;
+    margin-left: 15px;
+  }
+  .card:hover{
+    transform: scale(1.03);
+    transition: 0.3s;
+    box-shadow:  0 0 20px #333;;
+  }
+  .card:hover figcaption{
+    opacity: 1;
+    bottom: 0;   
+  }
+  .card span{
+    font-size: small;
+    font-weight: lighter;
+    margin-left: 15px;
+    margin-top: 10px;
+  }
+  .container p{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+  .container form{
+    width: 40%;
+    margin-left: 350px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.88);
+    border-radius: 40px;
+    padding: 7px;
+    display:flow;
+    justify-content:space-between;
+  }
+  .container form .empty-space{
+    flex: 1;
+
+  }
+  #search-item{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 16px;
+    margin-left: 20px;
+   
+  }
+  .navigation{
+    background-color:rgb(152, 196, 234);
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: relative;
+    height: 65px;
+    width: 100%;
+    margin-left: 0;
+  }
+li, a{
+  text-decoration: none;
+  font-family: sans-serif;
+  color: rgb(5, 5, 80);
+  font-weight: 500;
+  font-size: 20px;
+}
+a:hover{
+  text-shadow: 3px 0px 3px rgb(39, 39, 216);
+}
+.nav-links{
+   list-style: none;
+}
+.nav-links li{
+  display: inline-block;
+  margin-left: 30px;
+  padding: 20px;
+  background-color: rgb(152, 196, 234);
+}
+.opened-div {
+  display: none;
+  width: 200px;
+  height: 150px;
+  background-color: lightgreen;
+  text-align: center;
+  line-height: 150px;
+}

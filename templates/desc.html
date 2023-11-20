@@ -1,0 +1,47 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'desc.css'%}">
+</head>
+
+<body>
+  <div class="wrapper">
+    <img src="{{bg}}" alt="" class="food-img">
+    <h2>{{name}}</h2>
+    <!-- <span>A combination of chana masala and bhatura.</span> -->
+    <div class="speci">
+      <p>Time </p>
+      <!-- <h3>Calories</h3> -->
+    </div>
+    <div class="speci-val">
+      <h3>{{time}} Minutes</h3>
+    </div>
+    <!-- <div class="desc">
+      <h2>Description</h2>
+      <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat quos
+        explicabo numquam, doloribus nemo veniam ratione nihil corrupti magni obcaecati
+        libero deserunt? Minima, porro a! Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Quas ab dolores possimus rerum animi veritatis nulla facilis sequi nostrum? Incidunt.</span>
+    </div> -->
+    <div class="ingredients">
+      <h2>Ingredients</h2>
+      <div class="ingredient-list">
+        {% for it in ingr %}
+        <label class="container">{{it.original}}
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+        {%endfor%}
+
+      </div>
+    </div>
+    <button class="btn">Read Full Recipe</button>
+  </div>
+</body>
+
+</html>

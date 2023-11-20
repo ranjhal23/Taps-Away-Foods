@@ -12,14 +12,15 @@
 <body>
     <div class="wrapper">
         <div class="container">
-            <p>Recipes to choose from</p>
+            <p>Cuisines to choose from</p>
             <div class="recipes">
                 {% for obj in cuisses %}
-                <figure class="card">
+                <a href="{% url 'item' val=obj.cuisine %}" class="card">
+
                     <img src="{{obj.bg}}" alt="">
                     <h2>{{obj.cuisine}}</h2>
                     <span> {{obj.description}}</span><br>
-                </figure>
+                </a>
                 {% endfor %}
 
             </div>

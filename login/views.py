@@ -45,7 +45,7 @@ def loginn(request):
                 val = True
                 # passes = passwords.objects.filter(username=em).all()
                 context = {'em': em, 'val': val}
-                return render(request, 'menu.html', context)
+                return render(request, 'cuis.html', context)
             else:
                 messages.error(request, 'Invalid credentials')
                 return redirect('log')

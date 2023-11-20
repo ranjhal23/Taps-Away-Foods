@@ -23,5 +23,7 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('auth', views.auth, name='auth'),
     path('', include('login.urls')),
-    path('cuisine/<str:val>', views.cuisine, name='cuisine')
+    path('cuisine/<str:val>', views.cuisine, name='cuisine'),
+    path('item/<str:val>', views.item, name='item'),
+    path('recipe/<str:val1>/<str:val2>', views.recipe, name='recipe')
 ]

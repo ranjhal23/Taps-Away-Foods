@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="{%static 'menues.css'%}">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+</head>
+
+<body>
+    <div class="wrapper">
+        <section>
+            <nav class="navigation">
+                <ul class="nav-links">
+                    <li><a href="#">Home</a>
+                    </li>
+                    <li><a href="#">Menu</a>
+                    </li>
+                    <li><a href="#">About Us</a>
+                    </li>
+                </ul>
+
+            </nav>
+        </section>
+        <div class="container">
+
+            <p>{{cuis}} Dishes</p>
+            <form>
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input type="text" id="search-item" placeholder="Search Product" onkeyup="search()">
+
+            </form>
+            <div class="recipes" id="menu-items">
+                {% for Dish in dishe %}
+                <a href="{%url 'recipe' val1=cuis val2=Dish.Name%}" class="card">
+                    <img src="{{Dish.bg}}" alt="">
+                    <h2>{{Dish.Name}}</h2>
+                    <!-- <span> A combination of chana masala and bhatura.</span><br> -->
+                </a>
+                {% endfor %}
+
+            </div>
+            <div id="openedDiv" class="opened-div">New div content</div>
+
+        </div>
+
+    </div>
+    <script src="new.js"></script>
+</body>
+
+</html>
