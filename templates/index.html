@@ -12,30 +12,31 @@
 <body>
     <!--wrapper-->
     <div class="wrapper">
+        <section>
+            <nav class="navigation">
+                <img src="{% static 'icon.png'%}" alt="" class="icon">
+                <div class="nav-items">
+                    <div class="flex-item">Home</div>
+                    <div class="flex-item">Menu</div>
+                    <div class="flex-item">About Us</div>
+                </div>
+                <a class="contact-btn" href="{%url 'auth'%} ">Log In</a>
+            </nav>
+        </section>
         <div class="container">
-            <section>
-                <nav class="navigation">
-                    <img src="{% static 'icon.png'%}" alt="" class="icon">
-                    <div class="nav-items">
-                        <div class="flex-item">Home</div>
-                        <div class="flex-item">Menu</div>
-                        <div class="flex-item">About Us</div>
-                    </div>
-                    <a class="contact-btn" href="{%url 'auth'%} ">Log in</a>
-                </nav>
-            </section>
+            
             <!--Hero section-->
             <section class="hero">
                 <div class="hero-content">
                     <p class="hero-head">
-                        <span style="color:#FEC868">Ingredients</span>
+                        It's not just 
+                        <span style="color:#FEC868">Food,</span>
                         <br>
-                        at your <br> <span style="color: #FEC868;">Home,</span><br>
-                        Just in 15 minutes <br>
+                        It's an
+                         <span style="color: #FEC868;">Experience.</span><br>
                     </p>
-                    <a class="order-btn" href="{% url 'cuisine' val='false' %}">Order</a>
-
-
+                    <p class="hero-desc"> We are providing fresh and delicious meal-kits in few minutes at your doorsteps.</p>
+                    <a class="order-btn" href="{% url 'cuisine' val='false' %}">View Menu</a>
                 </div>
             </section>
         </div>

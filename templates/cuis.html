@@ -11,18 +11,27 @@
 
 <body>
     <div class="wrapper">
+        <section>
+            <div class="navigation">
+                <img src="{% static 'icon.png'%}" alt="" class="icon">
+                <div class="nav-items">
+                    <div class="flex-item">Home</div>
+                    <div class="flex-item">Menu</div>
+                    <div class="flex-item">About Us</div>
+                </div>   
+            </div>
+        </section>
+        
         <div class="container">
-            <p>Cuisines to choose from</p>
+            <p class="head">Cuisines To Choose From</p>
             <div class="recipes">
                 {% for obj in cuisses %}
                 <a href="{% url 'item' val=obj.cuisine %}" class="card">
-
                     <img src="{{obj.bg}}" alt="">
                     <h2>{{obj.cuisine}}</h2>
                     <span> {{obj.description}}</span><br>
                 </a>
                 {% endfor %}
-
             </div>
         </div>
     </div>

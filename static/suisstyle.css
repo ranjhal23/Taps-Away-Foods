@@ -2,21 +2,35 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;   
-    background-color: aliceblue;
+    font-family: Agrandir, Verdana, Geneva, sans-serif;  
+    background-color: rgba(29, 29, 29, 0.889);
+    color: white
+}
+a{
+  text-decoration: none;
+}
+.head{
+  background-color: transparent;
+ 
+ 
 }
 .wrapper{
     height:100vh;
+    width: 100vw;
     overflow-x: hidden;
     overflow-y: auto;
 }
 .container{
-    height: 100%;
+   border-radius: 20px;
+    height: 500px;
+    background-color: transparent;
     max-width: 1200px;
     margin: 0 auto;
     /*margin-left:300px ;*/
-    padding: 20px;    
+    padding: 10px;   
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
 }
+
 .recipes{
     display: flex;
     flex-wrap:wrap;
@@ -26,6 +40,7 @@
 }
 .card {
     width: 30%;
+    background-color: transparent;
     overflow: hidden;
     position: relative;
     border-radius: 10px;
@@ -47,6 +62,7 @@
   .card h2{
     margin-top: 45px;
     margin-left: 15px;
+    color: rgba(220, 220, 220, 0.722);
   }
   .card:hover{
     transform: scale(1.03);
@@ -64,6 +80,7 @@
     font-weight: lighter;
     margin-left: 15px;
     margin-top: 10px;
+    color: grey;
   }
   .container p{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -73,4 +90,40 @@
     margin-bottom: 100px;
     margin-top: 30px;
   }
-  
+  .navigation{
+    background-color: rgba(29, 29, 29, 0.889);
+    display:flex;
+    color:white;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 50px;   
+    margin-bottom: 50px;
+}
+.nav-items{
+    display: flex;
+    background-color: transparent;
+    justify-content: space-between;
+    gap:30px;
+   margin-right: 550px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+.flex-item{
+  background-color: transparent;
+   font-weight: lighter;
+    transition-duration: 0.2s;
+    font-size: 23px;
+}
+.icon{
+  height:50px;
+  width:50px;
+  position:relative;
+  left:30px;
+  background-color: transparent;
+}
+.flex-item:hover{
+    color:#dc0727f5;
+    cursor:pointer;
+    text-shadow: 2px 2px 5px  rgba(0, 0, 0, 0.422);
+}

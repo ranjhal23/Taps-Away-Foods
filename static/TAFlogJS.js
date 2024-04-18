@@ -1,6 +1,6 @@
 var sw = false;
 if (sw === true) {
-  document.querySelector("#Sin").style.backgroundColor = "rgb(161, 161, 161)";
+  document.querySelector("#Sin").style.backgroundColor = "black";
 } else {
   document.querySelector("#Sin").style.backgroundColor = "transparent";
 }
