@@ -18,20 +18,54 @@
                     <div class="flex-item">Home</div>
                     <div class="flex-item">Menu</div>
                     <div class="flex-item">About Us</div>
-                </div>   
+                </div>  
+                <a href="#" class="user">
+                    <img src="{% static 'userIcon.jpeg'%}" alt="" class="user-icon"> 
+                </a>
+                
             </div>
         </section>
         
         <div class="container">
-            <p class="head">Cuisines To Choose From</p>
-            <div class="recipes">
-                {% for obj in cuisses %}
-                <a href="{% url 'item' val=obj.cuisine %}" class="card">
-                    <img src="{{obj.bg}}" alt="">
-                    <h2>{{obj.cuisine}}</h2>
-                    <span> {{obj.description}}</span><br>
+            <p class="head" >Cuisines To Choose From</p>
+            <div class="recipes">  
+                <a href="#" class="card">
+                    <!-- <img src="{{obj.bg}}" alt=""> -->
+                    <img src="{% static 'indian.jpeg'%}">
+                    <h2 >Indian</h2>
+                    <span>Spice Up Your Life: Taste India!</span><br>
                 </a>
-                {% endfor %}
+                <a href="#" class="card">
+                    <!-- <img src="{{obj.bg}}" alt=""> -->
+                    <img src="{% static 'mexican.jpeg'%}">
+                    <h2 >Mexican</h2>
+                    <span> Sabor Mexicano!</span><br>
+                </a>
+                <a href="#" class="card">
+                    <!-- <img src="{{obj.bg}}" alt=""> -->
+                    <img src="{% static 'japanese.jpeg'%}">
+                    <h2 >Japanese</h2>
+                    <span>Experience Japan: Taste Tradition!</span><br>
+                </a>
+                <a href="#" class="card">
+                    <!-- <img src="{{obj.bg}}" alt=""> -->
+                    <img src="{% static 'italian.jpeg'%}">
+                    <h2 >Italian</h2>
+                    <span>Buon Appetito! Delight in Italian Delicacies!</span><br>
+                </a>
+                <a href="#" class="card">
+                    <!-- <img src="{{obj.bg}}" alt=""> -->
+                    <img src="{% static 'chinese.jpeg'%}">
+                    <h2 >Chinese</h2>
+                    <span>Taste the Dragon!</span><br>
+                </a>
+                <a href="#" class="card">
+                    <!-- <img src="{{obj.bg}}" alt=""> -->
+                    <img src="{% static 'american.jpeg'%}">
+                    <h2 >American</h2>
+                    <span>Dive into American Taste!</span><br>
+                </a>
+                
             </div>
         </div>
     </div>

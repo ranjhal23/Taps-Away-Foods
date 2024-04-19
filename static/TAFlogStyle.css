@@ -1,7 +1,7 @@
 
 body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-image: linear-gradient(#232931 ,#0f0f0f);
+    background-color: rgba(29, 29, 29, 0.889);
     background-repeat: no-repeat;  
     overflow-x: hidden;
     min-height: 1000px;
@@ -73,7 +73,7 @@ left: 1710px;
     width: 75px;
     left: 300px;
     border-radius: 7px;
-    background-color: #4ECCA3;
+    background-color: #dc0727f5;
     /* display: inline; */
     transition: all 0.2s linear;
     
@@ -93,14 +93,13 @@ left: 1710px;
 
 #main{
     height: 550px;
-    position:absolute;
+    position: relative;
+    margin-right: 500px;
     overflow: hidden;
     width: 500px;
     background-color: rgba(0, 0, 0, 0.2); 
     border-radius: 100px;
     top: 50px;
-    margin-right: 1000px;
-    border-radius: 100px;
     transition: 0s linear;
     transform: scale(1);
     box-shadow: 4px 4px 28px #000000 ;
@@ -142,7 +141,7 @@ left: 1710px;
     position: relative;
     color: #000000;
     top: 60px;
-    background-color:#4ECCA3;
+    background-color:#dc0727f5;;
     height: 40px;
     width: 244px;
     box-shadow: 4px 4px 28px #000000 ;
@@ -205,12 +204,18 @@ left: 1710px;
 #logbutt{
     color: black;
     position: relative;
-    width: 65px;
-    height: 20px;
+    width: 90px;
+    height:40px;
     box-shadow: 4px 4px 28px #000000 ;
     top: 185px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 15px;
     left: -100px;
-    background-color: #4ECCA3;
+    color: white;
+    background-color: #dc0727f5;;
     border: none;
     transition: linear 0.2s;
     border-radius: 20px;
@@ -251,12 +256,18 @@ left: 1710px;
 }
 #cret{
     position: relative;
-    width: 65px;
-    height: 20px;
+    width: 90px;
+    height:40px;
     top: 200px;
     left: -100px;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 15px;
     /* border-bottom: #000000; */
-    background-color: #4ECCA3;
+    background-color: #dc0727f5;;
     border: none;
     transition: linear 0.2ss;
     border-radius: 20px;

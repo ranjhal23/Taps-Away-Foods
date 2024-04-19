@@ -22,55 +22,64 @@ a{
 }
 .container{
    border-radius: 20px;
-    height: 500px;
+    height:auto;
     background-color: transparent;
-    max-width: 1200px;
+    max-width: 1250px;
     margin: 0 auto;
     /*margin-left:300px ;*/
     padding: 10px;   
     box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
 }
+.user{
+  margin-right: 2%;
+  margin-top: 1%;
+}
+.user-icon{
+  height: 35px;
+  border-radius: 50px;
+  margin-right: 5%;
+}
 
 .recipes{
     display: flex;
     flex-wrap:wrap;
-    justify-content:space-between;
+    row-gap: 40px;
+   column-gap: 40px;
+    margin-top: -2%;
+    margin-bottom: 2%;
+    margin-left: 8%;
     
     
 }
 .card {
-    width: 30%;
+    width: 28%;
     background-color: transparent;
     overflow: hidden;
-    position: relative;
+    position: absolute;
     border-radius: 10px;
-    margin-bottom: 30px;
     position: relative;
     border: #333;
-    max-height: 400px;
-   
+    max-height: 300px;
+    box-shadow: 0 0 20px #262525;
   }
   .card img {
-    height: 60%;
+    height: 80%;
     width: 100%;
     object-fit: cover;
     margin-top: 0;
     margin-left: 0;
     margin-right: 0;
-    box-shadow: 0 0 20px #333;
+    box-shadow: 0 0 20px #605e5e;
   }
   .card h2{
-    margin-top: 45px;
-    margin-left: 15px;
-    color: rgba(220, 220, 220, 0.722);
+   margin-left: 4%;
+   color:#dc0727f5;
   }
   .card:hover{
     transform: scale(1.03);
     transition: 0.3s;
     box-shadow:  0 0 20px #333;;
   }
-  
- 
   .card:hover figcaption{
     opacity: 1;
     bottom: 0;   
@@ -80,17 +89,18 @@ a{
     font-weight: lighter;
     margin-left: 15px;
     margin-top: 10px;
+    margin-bottom: 10px;
     color: grey;
   }
   .container p{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
     font-size: 50px;
-    
     margin-bottom: 100px;
     margin-top: 30px;
   }
   .navigation{
+    margin-top: 1%;
     background-color: rgba(29, 29, 29, 0.889);
     display:flex;
     color:white;
@@ -98,14 +108,14 @@ a{
     align-items: center;
     position: relative;
     height: 50px;   
-    margin-bottom: 50px;
+    margin-bottom: 2%;
 }
 .nav-items{
     display: flex;
     background-color: transparent;
     justify-content: space-between;
     gap:30px;
-   margin-right: 550px;
+   margin-right: 100px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
 }
