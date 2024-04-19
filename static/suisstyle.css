@@ -43,13 +43,11 @@ a{
 .recipes{
     display: flex;
     flex-wrap:wrap;
-    row-gap: 40px;
-   column-gap: 40px;
+    row-gap: 60px;
+   column-gap: 60px;
     margin-top: -2%;
     margin-bottom: 2%;
-    margin-left: 8%;
-    
-    
+    margin-left: 5%;   
 }
 .card {
     width: 28%;
@@ -115,7 +113,6 @@ a{
     background-color: transparent;
     justify-content: space-between;
     gap:30px;
-   margin-right: 100px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
 }
